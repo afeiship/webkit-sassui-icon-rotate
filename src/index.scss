@@ -19,8 +19,6 @@ $webkit-sassui-icon-rotate-options: (
     $key: rotate-list
   );
 
-  $root: &;
-
   > * {
     transition: all 0.3s;
     transform: rotate(0deg);
