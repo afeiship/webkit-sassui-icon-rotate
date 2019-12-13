@@ -1,0 +1,39 @@
+/*webkit-sassui-icon-rotate Start*/
+$webkit-sassui-icon-rotate-options: (
+  duration: 0.3s,
+  rotate-list: (
+    90,
+    180,
+    270
+  )
+) !default;
+
+.webkit-sassui-icon-rotate {
+  $duration: map-get(
+    $map: $webkit-sassui-icon-rotate-options,
+    $key: duration
+  );
+
+  $rotate-list: map-get(
+    $map: $webkit-sassui-icon-rotate-options,
+    $key: rotate-list
+  );
+
+  $root: &;
+
+  > * {
+    transition: all 0.3s;
+    transform: rotate(0deg);
+  }
+
+  @each $item in $rotate-list {
+    &.is-#{$item} {
+      &:hover {
+        > * {
+          transform: rotate(#{$item}deg);
+        }
+      }
+    }
+  }
+}
+/*webkit-sassui-icon-rotate End*/

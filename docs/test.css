@@ -1,0 +1,22 @@
+/*webkit-sassui-icon-rotate Start*/
+.webkit-sassui-icon-rotate > * {
+  transition: all 0.3s;
+  transform: rotate(0deg);
+}
+
+.webkit-sassui-icon-rotate.is-90:hover > * {
+  transform: rotate(90deg);
+}
+
+.webkit-sassui-icon-rotate.is-180:hover > * {
+  transform: rotate(180deg);
+}
+
+.webkit-sassui-icon-rotate.is-270:hover > * {
+  transform: rotate(270deg);
+}
+
+/*webkit-sassui-icon-rotate End*/
+.test-webkit-sassui-icon-rotate {
+  border: 1px solid red;
+}

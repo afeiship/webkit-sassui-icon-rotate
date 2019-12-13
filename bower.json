@@ -1,0 +1,29 @@
+{
+  "name": "webkit-sassui-icon-rotate",
+  "description": "Icon rotoate.",
+  "main": [
+    "dist/webkit-sassui-icon-rotate.css",
+    "dist/webkit-sassui-icon-rotate.scss"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webkit",
+    "cssui",
+    "sassui"
+  ],
+  "homepage": "https://github.com/afeiship/webkit-sassui-icon-rotate",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}
