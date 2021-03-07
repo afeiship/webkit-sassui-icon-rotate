@@ -3,16 +3,44 @@
  * description: Icon rotoate.
  * homepage: https://github.com/afeiship/wsui-icon-rotate
  * version: 1.0.0
- * date: 2020-12-23 15:01:37
+ * date: 2021-03-07 11:05:47
  * license: MIT
  */
 
 /*wsui-icon-rotate Start*/
 $wsui-icon-rotate-options: (
-  color: #f00
+  duration: 0.3s,
+  rotate-list: (
+    90,
+    180,
+    270
+  )
 ) !default;
 
 .wsui-icon-rotate {
-  //Your code goes here.
+  $duration: map-get(
+    $map: $wsui-icon-rotate-options,
+    $key: duration
+  );
+
+  $rotate-list: map-get(
+    $map: $wsui-icon-rotate-options,
+    $key: rotate-list
+  );
+
+  > * {
+    transition: all 0.3s;
+    transform: rotate(0deg);
+  }
+
+  @each $item in $rotate-list {
+    &.is-#{$item} {
+      &:hover {
+        > * {
+          transform: rotate(#{$item}deg);
+        }
+      }
+    }
+  }
 }
 /*wsui-icon-rotate End*/

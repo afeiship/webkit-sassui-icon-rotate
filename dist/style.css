@@ -3,8 +3,21 @@
  * description: Icon rotoate.
  * homepage: https://github.com/afeiship/wsui-icon-rotate
  * version: 1.0.0
- * date: 2020-12-23 15:01:37
+ * date: 2021-03-07 11:05:47
  * license: MIT
  */
 /*wsui-icon-rotate Start*/
+.wsui-icon-rotate > * {
+  transition: all 0.3s;
+  transform: rotate(0deg); }
+
+.wsui-icon-rotate.is-90:hover > * {
+  transform: rotate(90deg); }
+
+.wsui-icon-rotate.is-180:hover > * {
+  transform: rotate(180deg); }
+
+.wsui-icon-rotate.is-270:hover > * {
+  transform: rotate(270deg); }
+
 /*wsui-icon-rotate End*/
