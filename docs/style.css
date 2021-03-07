@@ -1,0 +1,22 @@
+/*wsui-icon-rotate Start*/
+.wsui-icon-rotate > * {
+  transition: all 0.3s;
+  transform: rotate(0deg);
+}
+
+.wsui-icon-rotate.is-90:hover > * {
+  transform: rotate(90deg);
+}
+
+.wsui-icon-rotate.is-180:hover > * {
+  transform: rotate(180deg);
+}
+
+.wsui-icon-rotate.is-270:hover > * {
+  transform: rotate(270deg);
+}
+
+/*wsui-icon-rotate End*/
+.test-wsui-icon-rotate {
+  border: 1px solid red;
+}

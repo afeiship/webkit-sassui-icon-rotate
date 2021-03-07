@@ -1,5 +1,5 @@
-/*webkit-sassui-icon-rotate Start*/
-$webkit-sassui-icon-rotate-options: (
+/*wsui-icon-rotate Start*/
+$wsui-icon-rotate-options: (
   duration: 0.3s,
   rotate-list: (
     90,
@@ -8,14 +8,14 @@ $webkit-sassui-icon-rotate-options: (
   )
 ) !default;
 
-.webkit-sassui-icon-rotate {
+.wsui-icon-rotate {
   $duration: map-get(
-    $map: $webkit-sassui-icon-rotate-options,
+    $map: $wsui-icon-rotate-options,
     $key: duration
   );
 
   $rotate-list: map-get(
-    $map: $webkit-sassui-icon-rotate-options,
+    $map: $wsui-icon-rotate-options,
     $key: rotate-list
   );
 
@@ -34,4 +34,4 @@ $webkit-sassui-icon-rotate-options: (
     }
   }
 }
-/*webkit-sassui-icon-rotate End*/
+/*wsui-icon-rotate End*/
